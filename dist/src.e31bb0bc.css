@@ -1,0 +1,82 @@
+/*IMPORT */
+/*  NAVIGATION */
+nav {
+  height: 70px;
+  width: 100%;
+  background: black;
+  padding: 0 5%;
+}
+
+.nav {
+  color: white;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+  font-size: 10rem;
+}
+@media (max-width: 600px) {
+  .nav {
+    justify-content: center;
+  }
+}
+.nav h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.nav li {
+  margin-right: 0 20px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 600px) {
+  .nav li {
+    font-size: 0.8rem;
+  }
+}
+.nav li:hover {
+  color: #ec74f7;
+}
+.nav li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #ec74f7;
+  transition: 0.3s ease-in-out;
+}
+.nav li:hover::after {
+  width: 100%;
+}
+
+/* Variable */
+/* Global Code */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Montserrat;
+  background: black;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

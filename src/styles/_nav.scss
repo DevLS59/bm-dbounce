@@ -1,0 +1,65 @@
+
+$hoverColor : rgb(236, 116, 247);
+
+/*  NAVIGATION */
+nav {
+    height : 70px;
+    width : 100%;
+    background : black;
+    padding : 0 5%;
+}
+.nav {
+    color : white;
+    display : flex;
+    height : 100%;
+    align-items : center;
+    list-style: none;
+    justify-content: flex-end;
+   
+    font-size : 10rem;
+    
+    @media (max-width: 600px) {
+        justify-content: center
+    }
+    h1 {
+        font-size : 3rem;
+        color : #fff;
+    }
+
+    li {
+        margin-right : 0 20px ;
+        padding : 0 10px;
+        cursor : pointer;
+        font-size : 1.1rem;
+        font-weight : 600;
+        text-transform: uppercase;
+        transition : 0.3s ease-in-out;
+
+
+        @media (max-width: 600px) {
+            font-size : 0.8rem;
+        }
+
+
+        &:hover {
+            color : $hoverColor ;
+        }
+
+        &::after {
+            content : '';
+            display : block;
+            width : 0;
+            height : 1.5px;
+            background : $hoverColor ;
+            transition : 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            width : 100%;
+        }
+    }
+}
+
+ 
+ 
+
