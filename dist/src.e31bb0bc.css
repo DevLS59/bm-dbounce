@@ -61,9 +61,9 @@ nav {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header-text {
-    height: 50px;
+    height: 100px;
   }
 }
 .header-text h1 {
@@ -71,7 +71,7 @@ nav {
   color: #fff;
   text-transform: uppercase;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header-text h1 {
     font-size: 2rem;
   }
@@ -81,9 +81,15 @@ nav {
 .container-video {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #eeee;
   padding: 5rem;
+  background: violet;
+}
+@media (max-width: 900px) {
+  .container-video {
+    height: 60vh;
+  }
 }
 .container-video .container-miniature-gauche {
   position: absolute;
@@ -221,13 +227,20 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: black;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background: green;
+}
+@media (max-width: 900px) {
+  #videoplyr {
+    height: 60vh;
+    top: 228px;
+    background: green;
+  }
 }
 
 #videoplyr video {

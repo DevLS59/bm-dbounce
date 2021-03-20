@@ -4,17 +4,19 @@
     display : flex;
     justify-content: center;
     align-items : center;
+   
 
-    @media (max-width: 600px) {
-        height :50px;   
+
+    @media (max-width: 900px) {
+        height : 100px;
+        
     }
-
     h1 {
         font-size : 3rem;
         color : #fff;
         text-transform: uppercase;
 
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
             font-size : 2rem;
         }
     }
@@ -25,9 +27,15 @@
 .container-video {
     position : relative;
     width : 100%;
-    min-height : 100vh;
+    height : 100vh;
     background-color : #eeee;
     padding : 5rem;
+    background : violet;
+
+    @media (max-width : 900px) {
+        height : 60vh;
+      
+    }
 
 
     .container-miniature-gauche{
@@ -187,7 +195,7 @@
     left : 50%;
     transform : translate(-50%, -50%);
     width : 100%;
-    min-height : 100vh;
+    height : 100vh;
     background : black;
     overflow : hidden;
     display : flex;
@@ -196,6 +204,13 @@
     background : green;
     
     
+    @media (max-width: 900px) {
+        
+   height : 60vh;
+        top : 228px;
+        background : green;
+        // display : none;
+    }
 
 }
 
