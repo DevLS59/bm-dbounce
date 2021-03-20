@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles\\main.scss"],"names":[],"mappings":"AAGA,KACI,mBAGJ,IACI","file":"src.03d23312.css","sourceRoot":"..\\src","sourcesContent":["$bg : lightGrey;\r\n\r\n\r\nbody {\r\n    background : $bg;\r\n}\r\n\r\nimg {\r\n    width : 300px;\r\n}"]}
