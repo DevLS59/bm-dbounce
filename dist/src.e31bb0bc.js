@@ -7339,8 +7339,6 @@ var _gsap = require("gsap");
 
 var _ScrollTrigger = require("gsap/ScrollTrigger");
 
-alert('hello');
-
 _gsap.gsap.registerPlugin(_ScrollTrigger.ScrollTrigger);
 
 _gsap.gsap.to('.container-miniature-gauche', {
@@ -7390,7 +7388,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57444" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57592" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

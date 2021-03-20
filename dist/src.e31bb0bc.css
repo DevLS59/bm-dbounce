@@ -82,13 +82,12 @@ nav {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #eeee;
+  background-color: black;
   padding: 5rem;
-  background: violet;
 }
 @media (max-width: 900px) {
   .container-video {
-    height: 60vh;
+    height: 70vh;
   }
 }
 .container-video .container-miniature-gauche {
@@ -337,6 +336,11 @@ nav {
     -webkit-transform: skewX(0deg);
   }
 }
+section {
+  height: 100vh;
+  background: midnightblue;
+}
+
 /* Variable */
 /* Global Code */
 * {
