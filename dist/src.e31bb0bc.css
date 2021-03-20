@@ -103,6 +103,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  opacity: 1;
 }
 @media (max-width: 1400px) {
   .container-video .container-miniature-gauche {
@@ -233,13 +234,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: green;
 }
 @media (max-width: 900px) {
   #videoplyr {
     height: 60vh;
     top: 228px;
-    background: green;
   }
 }
 
