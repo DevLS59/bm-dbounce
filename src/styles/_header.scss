@@ -4,13 +4,11 @@
     display : flex;
     justify-content: center;
     align-items : center;
-   
-
 
     @media (max-width: 900px) {
         height : 100px;
-        
     }
+
     h1 {
         font-size : 3rem;
         color : #fff;
@@ -22,7 +20,6 @@
     }
 }
 
-
 /*  HEADER  */ 
 .container-video {
     position : relative;
@@ -31,12 +28,9 @@
     background-color : black;
     padding : 5rem;
     
-
     @media (max-width : 900px) {
         height : 70vh;
-      
     }
-
 
     .container-miniature-gauche{
         position : absolute ; 
@@ -52,13 +46,9 @@
         z-index : 1000;
         opacity : 1;
         
-        
-        @media (max-width: 1400px) {
-           flex-direction : column;
-           
-            
+        @media (max-width: 900px) {
+            flex-direction : column;
         }
-
         .imggauche {
             width : 250px;
             height : 400px;
@@ -68,7 +58,6 @@
                 width :150px;
                 height : 150px;
             }
-          
         }
 
         .image-square-container {
@@ -79,12 +68,9 @@
             align-items: center;
             justify-content: space-around;
 
-            @media (max-width: 1400px) {
+            @media (max-width: 900px) {
                 justify-content: space-around ;
-                
-             }
-
-             
+            }
         }
 
         .image-square{
@@ -112,12 +98,10 @@
         justify-content: space-between;
         z-index : 1000;
 
+        @media (max-width: 900px) {
+            flex-direction : column;
+        }
 
-        @media (max-width: 1400px) {
-             flex-direction : column;
-            
-             
-         }
         .imggauche {
             width : 250px;
             height : 400px;
@@ -147,16 +131,12 @@
                 width :150px;
                 height : 150px;
             }
-
-           
         }
     }
     
 }
 
-    
 
-   
 /* MESSAGE DEFILANT */
 .container-msg {
     display : flex;
@@ -186,8 +166,6 @@
     }
 } 
 
-
-
 /* VIDEO PLAYER */
 
 #videoplyr {
@@ -203,21 +181,14 @@
     justify-content: center; 
     align-items : center;
     
-    
-    
     @media (max-width: 900px) {
-        
-   height : 60vh;
+        height : 60vh;
         top : 228px;
-        
-        // display : none;
     }
-
 }
 
 #videoplyr video {
     height : 60%;
-    
     position : absolute;
     top : 50%; 
     left : 50%; 
