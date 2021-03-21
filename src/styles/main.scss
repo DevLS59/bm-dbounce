@@ -22,7 +22,7 @@ $hoverColor : rgb(236, 116, 247);
 }
 
 html {
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +30,12 @@ body {
     overflow-x: hidden;
     font-family : Montserrat;
     background : black;
+    
     overflow-x: hidden;
+
+    @media (max-width : 900px) {
+        -webkit-overflow-scrolling: touch;
+    }
     
 }
 

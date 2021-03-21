@@ -248,7 +248,7 @@ nav {
   }
 }
 
-#videoplyr video {
+#videoplyr img {
   height: 60%;
   position: absolute;
   top: 50%;
@@ -391,6 +391,10 @@ nav {
 .glitchstart {
   animation: glitch2 500ms infinite;
   filter: blur(1.5px);
+}
+
+.titleGlitch.titlePrincipal {
+  font-size: 4rem;
 }
 
 section {
@@ -658,16 +662,17 @@ h2 {
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   width: 100%;
   overflow-x: hidden;
   font-family: Montserrat;
   background: black;
   overflow-x: hidden;
+}
+@media (max-width: 900px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 a {

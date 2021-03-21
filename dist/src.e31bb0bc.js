@@ -7371,6 +7371,9 @@ _ScrollTrigger.ScrollTrigger.matchMedia({
       },
       x: '100%'
     });
+  },
+  "(max-width:899px)": function maxWidth899px() {
+    _gsap.gsap.kill();
   }
 }); // barba animation 
 // const wipe = document.querySelector('.overlay');
@@ -7428,7 +7431,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52645" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58413" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

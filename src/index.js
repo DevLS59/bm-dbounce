@@ -6,9 +6,9 @@ import barba from '@barba/core';
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia({
+
+
     "(min-width : 800px)" : function() {
-
-
         gsap.to('.container-miniature-gauche', {
             scrollTrigger : {
                 trigger : '#main',
@@ -28,6 +28,10 @@ ScrollTrigger.matchMedia({
             x :'100%'
         })
 
+    },
+
+    "(max-width:899px)" : function() {
+        gsap.kill();
     }
 })
 
