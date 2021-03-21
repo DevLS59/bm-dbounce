@@ -6,7 +6,8 @@
     align-items : center;
 
     @media (max-width: 900px) {
-        height : 100px;
+        height : 50px;
+      
     }
 
     h1 {
@@ -29,8 +30,11 @@
     padding : 5rem;
     
     @media (max-width : 900px) {
-        height : 70vh;
+        max-height : 250px;
+        background : yellow;
+      
     }
+  
 
     .container-miniature-gauche{
         position : absolute ; 
@@ -48,6 +52,7 @@
         
         @media (max-width: 900px) {
             flex-direction : column;
+            display : none;
         }
         .imggauche {
             width : 250px;
@@ -100,6 +105,7 @@
 
         @media (max-width: 900px) {
             flex-direction : column;
+            display : none;
         }
 
         .imggauche {
@@ -153,7 +159,11 @@
     -webkit-text-stroke-width:1px;
     -webkit-text-stroke-color: #fff;
     color : rgba(255,255,255,0);
-    animation : titleAnim 5s linear infinite
+    animation : titleAnim 5s linear infinite;
+
+   @media (max-width : 900px) {
+       font-size : 3rem;
+   }
 }
 
 @keyframes titleAnim {
@@ -182,8 +192,9 @@
     align-items : center;
     
     @media (max-width: 900px) {
-        height : 60vh;
-        top : 228px;
+        max-height : 250px;
+       
+        
     }
 }
 

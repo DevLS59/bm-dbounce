@@ -5,24 +5,33 @@ import barba from '@barba/core';
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.container-miniature-gauche', {
-    scrollTrigger : {
-        trigger : '#main',
-        start : 'top top',
-        scrub : 3,
-        pin : '#main'
-    },
-    x :'-100%'
+ScrollTrigger.matchMedia({
+    "(min-width : 800px)" : function() {
+
+
+        gsap.to('.container-miniature-gauche', {
+            scrollTrigger : {
+                trigger : '#main',
+                start : 'top top',
+                scrub : 3,
+                pin : '#main'
+            },
+            x :'-100%'
+        })
+        gsap.to('.container-miniature-droit', {
+            scrollTrigger : {
+                trigger : '#main',
+                start : 'top top',
+                scrub : 3,
+                pin : '#main'
+            },
+            x :'100%'
+        })
+
+    }
 })
-gsap.to('.container-miniature-droit', {
-    scrollTrigger : {
-        trigger : '#main',
-        start : 'top top',
-        scrub : 3,
-        pin : '#main'
-    },
-    x :'100%'
-})
+
+
 
 
 

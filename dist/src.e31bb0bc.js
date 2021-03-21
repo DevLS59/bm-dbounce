@@ -7350,24 +7350,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _gsap.gsap.registerPlugin(_ScrollTrigger.ScrollTrigger);
 
-_gsap.gsap.to('.container-miniature-gauche', {
-  scrollTrigger: {
-    trigger: '#main',
-    start: 'top top',
-    scrub: 3,
-    pin: '#main'
-  },
-  x: '-100%'
-});
+_ScrollTrigger.ScrollTrigger.matchMedia({
+  "(min-width : 800px)": function minWidth800px() {
+    _gsap.gsap.to('.container-miniature-gauche', {
+      scrollTrigger: {
+        trigger: '#main',
+        start: 'top top',
+        scrub: 3,
+        pin: '#main'
+      },
+      x: '-100%'
+    });
 
-_gsap.gsap.to('.container-miniature-droit', {
-  scrollTrigger: {
-    trigger: '#main',
-    start: 'top top',
-    scrub: 3,
-    pin: '#main'
-  },
-  x: '100%'
+    _gsap.gsap.to('.container-miniature-droit', {
+      scrollTrigger: {
+        trigger: '#main',
+        start: 'top top',
+        scrub: 3,
+        pin: '#main'
+      },
+      x: '100%'
+    });
+  }
 }); // barba animation 
 // const wipe = document.querySelector('.overlay');
 // // const TLAnim = new TimelineMax();
@@ -7424,7 +7428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54248" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53550" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
