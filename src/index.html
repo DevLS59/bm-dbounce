@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.scss">
    
 </head>
-<body>
+<body data-barba="wrapper">
 
     <!-- NAVIGATION -->
     <nav>
@@ -26,7 +27,7 @@
         </div>
 
         <!-- HEADER VIDEO -->
-    <div id="main" class="container-video">
+    <div id="main" class="container-video" >
         
         <div class="container-miniature-gauche">
 
@@ -62,21 +63,44 @@
     </header>
 
  <!-- SECTION CLIPS -->
- <section class="video" id="video">
+ <section class="video" id="video" data-barba="container" data-barba-namespace="home">
+    <div class="overlay"></div>
+
     <h1 class="titleGlitch"> CLIPS </h1>
+<div class="wrapper-clips">
+
+    <!-- Clip 1 -->
     <div class="wrapper-artist">
         <img class="img-artist" src="./images/cover-captain.jpg" alt="">
-
+    
         <div class="block-text">
             <div class="play">
-               <a href="https://youtu.be/Td6eIomoWwU" target="_blank"> <img class="btn-play" src="./images/play-button.svg" alt=""></a>
+               <a href="clip1.html"> <img class="btn-play" src="./images/play-button.svg" alt=""></a>
                 <h3 class='title-video'> Voir la vidéo </h3>
             </div>
             <h3 class="genre" >Rap</h3>
             <h2>bm & <b>dbounce</b></h2>
         </div>
-        <h4 class="title-aside"> Dikkenek Pro </h4>
+        <h4 class="title-aside"> Captain </h4>
     </div>
+    <!--end clip1 -->
+    <!-- Clip 2 -->
+    <div class="wrapper-artist">
+        <img class="img-artist" src="./images/cover-lapiste.jpg" alt="">
+    
+        <div class="block-text">
+            <div class="play">
+               <a href="clip2.html"> <img class="btn-play" src="./images/play-button.svg" alt=""></a>
+                <h3 class='title-video'> Voir la vidéo </h3>
+            </div>
+            <h3 class="genre" >Rap</h3>
+            <h2>bm & <b>dbounce</b></h2>
+        </div>
+        <h4 class="title-aside"> La piste </h4>
+    </div>
+    <!--end clip2 -->
+</div>
+
 </section>
 
 

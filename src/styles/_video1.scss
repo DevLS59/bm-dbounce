@@ -1,0 +1,18 @@
+.wrapper-video-youtube {
+    width : 100%;
+    height :  100vh;
+    background : lightblue;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items : center;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(90deg, rgb(165, 165, 223),midnightblue) ;
+    position: absolute;
+    left: -100%;
+   
+}

@@ -7,7 +7,15 @@
     padding-top : 5rem;
     /* margin : 0 auto ; */
     background-color : black;
+    padding : 0 40px;
     text-align : center;
+}
+
+.wrapper-clips {
+    width : 100%;
+    height : 100%;
+    display : flex;
+    justify-content: space-between;
 }
 
 .wrapper-artist {
@@ -15,6 +23,10 @@
     width : 500px;
     height :300px;
     overflow : hidden;
+
+    &:hover .title-aside{
+        opacity : 1;
+    }
 }
 
 .img-artist{
@@ -93,14 +105,22 @@ h2 {
 .title-aside {
     position : absolute;
     right : 5%;
-    font-size : 0.8rem;
+    font-size : 1.8rem;
     font-weight : 600;
     text-transform : uppercase;
     letter-spacing : 3px;
     top : 30%;
     color : #fff;
     writing-mode: vertical-lr;
+    opacity : 0 ;
+    transition :1s ease-in-out;
+
 }
+.title-aside:hover {
+    opacity : 1;
+}
+
+
 
 
 
