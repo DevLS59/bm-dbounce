@@ -6,7 +6,7 @@
 @import './section';
 @import './sectionVideos';
 @import './video1';
-@import './sons';
+@import './songs';
 
 
 
@@ -22,7 +22,7 @@ $hoverColor : rgb(236, 116, 247);
 }
 
 html {
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {

@@ -5,6 +5,9 @@ nav {
   width: 100%;
   background: black;
   padding: 0 5%;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 .nav {
@@ -29,7 +32,7 @@ nav {
   margin-right: 0 20px;
   padding: 0 10px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
@@ -351,8 +354,7 @@ nav {
   text-transform: uppercase;
   display: inline-block;
   opacity: 1;
-  /* text-shadow : 
-      0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0, .75), 0.025em 0.05em 0 rgba(0,0,255, .75); */
+  padding-top: 5rem;
 }
 
 .titleGlitch:hover {
@@ -394,12 +396,12 @@ nav {
 }
 
 section {
-  min-height: 100vh;
-  background: black;
+  height: 100vh;
+  background: violet;
 }
 
 .video {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: black;
   padding: 0 40px;
@@ -407,11 +409,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: red;
 }
 
 .wrapper-clips {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -567,89 +570,9 @@ h2 {
 }
 
 .songs {
-  text-align: center;
-  padding-top: 5rem;
-}
-
-.container-songs {
   width: 100%;
-  height: 100%;
-  padding-top: 2rem;
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-}
-@media (max-width: 900px) {
-  .container-songs {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.lecteur {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  transform-style: preserve-3d;
-}
-.lecteur:hover .face.front {
-  transform: perspective(500px) rotateY(180deg);
-}
-.lecteur .face {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 95%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-  transition: 2s ease-in-out;
-  transform: perspective(500px) rotateY(0);
-  background: #fff;
-}
-.lecteur .face.front {
-  background: #ff0;
-  background: url("/cover.9c094cd5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.lecteur .face.front2 {
-  background: #ff0;
-  background: url("/cover-tarantino.ceff2ad2.jpg");
-  background-repeat: no-repeat;
-}
-
-.lecteur .face.back {
-  background: black;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  color: #fff;
-  transform: perspective(500px) rotateY(180deg);
-  align-items: flex-start;
-}
-
-.lecteur:hover .face.back {
-  transform: perspective(500px) rotateY(360deg);
-}
-
-.lecteur .face h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-  transform: perspective(500px) translateZ(50px);
-}
-
-.icone-Headphone {
-  position: absolute;
-  bottom: 20%;
-  font-size: 2em;
-  display: inline-block;
-  text-transform: uppercase;
-  transform: perspective(500px) translateZ(50px);
+  height: 100vh;
+  background: pink;
 }
 
 /* Variable */
@@ -658,6 +581,10 @@ h2 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

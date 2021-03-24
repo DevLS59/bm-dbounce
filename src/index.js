@@ -28,12 +28,34 @@ ScrollTrigger.matchMedia({
             x :'100%'
         })
 
-    },
+        gsap.from('.clip1', {
+            scrollTrigger : {
+                markers : true,
+                trigger : '#video',
+                start : 'top top',
+                scrub : 3,
+                pin : '#video'
+            },
+            x :'-100%',
+            opacity : 0
+        }),
+        gsap.from('.clip3', {
+            scrollTrigger : {
+                markers : true,
+                trigger : '#video',
+                start : 'top top',
+                scrub : 3,
+                // pin : '#video'
+            },
+            x :'100%',
+            opacity : 0
+        })
+       
 
-    "(max-width:899px)" : function() {
-        gsap.kill();
+        
     }
 })
+      
 
 
 
@@ -43,43 +65,3 @@ ScrollTrigger.matchMedia({
 
 
 
-// barba animation 
-// const wipe = document.querySelector('.overlay');
-
-// // const TLAnim = new TimelineMax();
-
-// function delay(n) {
-//   return new Promise((done) => {
-//     setTimeout(() => {
-//       done();
-//     }, n)
-//   })
-// }
-
-// barba.init({
-
-//   sync: true,
-
-//   transitions: [
-//     {
-//       async leave(){
-
-//         const done = this.async();
-
-//         gsap.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
-
-//         await delay(1500);
-//         done();
-
-//       },
-//       enter(){
-
-//         gsap
-//         .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
-//         .set(wipe, {left: '-100%'})
-
-//       }
-//     }
-//   ]
-
-// })

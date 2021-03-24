@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\cover.jpg":[["cover.9c094cd5.jpg","images/cover.jpg"],"images/cover.jpg"],"./..\\images\\cover-tarantino.jpg":[["cover-tarantino.ceff2ad2.jpg","images/cover-tarantino.jpg"],"images/cover-tarantino.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/gsap/gsap-core.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/gsap/gsap-core.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7371,38 +7371,30 @@ _ScrollTrigger.ScrollTrigger.matchMedia({
       },
       x: '100%'
     });
-  },
-  "(max-width:899px)": function maxWidth899px() {
-    _gsap.gsap.kill();
+
+    _gsap.gsap.from('.clip1', {
+      scrollTrigger: {
+        markers: true,
+        trigger: '#video',
+        start: 'top top',
+        scrub: 3,
+        pin: '#video'
+      },
+      x: '-100%',
+      opacity: 0
+    }), _gsap.gsap.from('.clip3', {
+      scrollTrigger: {
+        markers: true,
+        trigger: '#video',
+        start: 'top top',
+        scrub: 3 // pin : '#video'
+
+      },
+      x: '100%',
+      opacity: 0
+    });
   }
-}); // barba animation 
-// const wipe = document.querySelector('.overlay');
-// // const TLAnim = new TimelineMax();
-// function delay(n) {
-//   return new Promise((done) => {
-//     setTimeout(() => {
-//       done();
-//     }, n)
-//   })
-// }
-// barba.init({
-//   sync: true,
-//   transitions: [
-//     {
-//       async leave(){
-//         const done = this.async();
-//         gsap.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
-//         await delay(1500);
-//         done();
-//       },
-//       enter(){
-//         gsap
-//         .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
-//         .set(wipe, {left: '-100%'})
-//       }
-//     }
-//   ]
-// })
+});
 },{"./styles/main.scss":"styles/main.scss","gsap":"../node_modules/gsap/index.js","gsap/ScrollTrigger":"../node_modules/gsap/ScrollTrigger.js","@barba/core":"../node_modules/@barba/core/dist/barba.umd.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -7431,7 +7423,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58413" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56998" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
