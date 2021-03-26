@@ -7351,7 +7351,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _gsap.gsap.registerPlugin(_ScrollTrigger.ScrollTrigger);
 
 _ScrollTrigger.ScrollTrigger.matchMedia({
-  "(min-width : 800px)": function minWidth800px() {
+  "(min-width : 768px)": function minWidth768px() {
     _gsap.gsap.to('.container-miniature-gauche', {
       scrollTrigger: {
         trigger: '#main',
@@ -7423,7 +7423,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56998" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50930" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -5,11 +5,20 @@ $hoverColor : rgb(236, 116, 247);
 nav {
     height : 70px;
     width : 100%;
-    background : black;
+    background : transparent;
     padding : 0 5%;
     position : fixed ;
-    top : 10px;
-    right : 10px;
+    top : 0px;
+    right : 0px;
+    display : flex;
+    align-items : center;
+    justify-content: flex-end;
+    z-index : 100;
+
+    @media (max-width: 600px) {
+        justify-content: center;
+        align-items : center;
+    }
     
 }
 .nav {
@@ -18,12 +27,7 @@ nav {
     height : 100%;
     align-items : center;
     list-style: none;
-    justify-content: flex-end;
-    font-size : 10rem;
-   
-    @media (max-width: 600px) {
-        justify-content: center
-    }
+
     h1 {
         font-size : 3rem;
         color : #fff;
@@ -62,7 +66,4 @@ nav {
         }
     }
 }
-
- 
- 
 

@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.matchMedia({
 
 
-    "(min-width : 800px)" : function() {
+    "(min-width : 768px)" : function() {
         gsap.to('.container-miniature-gauche', {
             scrollTrigger : {
                 trigger : '#main',
